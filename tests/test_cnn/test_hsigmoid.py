@@ -13,7 +13,7 @@ def test_hsigmoid():
         torch.ones(input_shape))
     if TORCH_VERSION == 'parrots':
         input = input.cuda()
-        act = act.cuda() 
+        act = act.cuda()
         output = act(input)
         expected_output = expected_output.cuda()
     # test output shape
